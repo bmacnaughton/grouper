@@ -23,9 +23,9 @@
 // })
 //
 function Grouper (options) {
-  this.group = new Group(Symbol('empty'), Symbol('nokey'))
-  this.groups = []
-  this.opts = options || {}
+  this.group = new Group(Symbol('empty'), Symbol('nokey'));
+  this.groups = [];
+  this.opts = options || {};
 }
 
 //
@@ -41,26 +41,26 @@ function Grouper (options) {
 // that pass or fail, then sort the test results by sequence then group
 // using the test result (pass or fail) as the key.
 //
-Grouper.prototype.addItem = function (item, key) {
+Grouper.prototype.addItem = function addItem (item, key) {
   // same key?
   if (this.group.key === key) {
-    return this.group.add(item)
+    return this.group.add(item);
   }
   // the key changed or first item
-  this.group = new Group(item, key)
-  this.groups.push(this.group)
-  return this.group
+  this.group = new Group(item, key);
+  this.groups.push(this.group);
+  return this.group;
 }
 
 //
 // constructor
 //
 function Group (item, key) {
-  this.first = item
-  this.last = item
-  this.key = key
-  this.count = 1
-  this._items = [item]
+  this.first = item;
+  this.last = item;
+  this.key = key;
+  this.count = 1;
+  this._items = [item];
   Object.defineProperty(this, 'items', {
     get: () => this._items
   })
@@ -69,11 +69,11 @@ function Group (item, key) {
 //
 // add an item to the group
 //
-Group.prototype.add = function (item) {
-  this.count += 1
-  this.last = item
-  this._items.push(item)
-  return this
+Group.prototype.add = function add (item) {
+  this.count += 1;
+  this.last = item;
+  this._items.push(item);
+  return this;
 }
 
 //
@@ -95,6 +95,4 @@ Group.prototype.del = function del (item) {
   return item;
 }
 
-module.exports = Grouper
-
-
+module.exports = Grouper;

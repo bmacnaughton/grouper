@@ -1,0 +1,24 @@
+{
+  "name": "grouper",
+  "version": "1.0.0",
+  "description": "simple utility to group sequences of objects by a key",
+  "main": "grouper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmacnaughton/grouper.git"
+  },
+  "keywords": [
+    "group",
+    "grouper",
+    "utility"
+  ],
+  "author": "Bruce A. MacNaughton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmacnaughton/grouper/issues"
+  },
+  "homepage": "https://github.com/bmacnaughton/grouper#readme"
+}
