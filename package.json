@@ -1,8 +1,8 @@
 {
-  "name": "grouper",
+  "name": "sequence-grouper",
   "version": "1.0.0",
   "description": "simple utility to group sequences of objects by a key",
-  "main": "grouper.js",
+  "main": "sequence-grouper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/bmacnaughton/grouper.git"
   },
   "keywords": [
+    "sequence",
     "group",
     "grouper",
     "utility"
@@ -18,7 +19,7 @@
   "author": "Bruce A. MacNaughton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bmacnaughton/grouper/issues"
+    "url": "https://github.com/bmacnaughton/sequence-grouper/issues"
   },
-  "homepage": "https://github.com/bmacnaughton/grouper#readme"
+  "homepage": "https://github.com/bmacnaughton/sequence-grouper#readme"
 }
